@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8" />
   <title>¡Felicidades, Invocador!</title>
@@ -18,7 +19,8 @@
 
     #contenido {
       padding: 20px;
-      background-color: #0c0c0c; /* Fondo sólido para que se capture bien */
+      background-color: #0c0c0c;
+      /* Fondo sólido para que se capture bien */
       color: #f0e6d2;
       max-width: 800px;
       margin: auto;
@@ -81,19 +83,23 @@
     .custom-images {
       margin: 3rem 0;
     }
+
     .custom-images h2 {
       color: #e4b42c;
       margin-bottom: 1rem;
     }
+
     .custom-images .image-container {
       display: flex;
       justify-content: center;
       gap: 20px;
       flex-wrap: wrap;
     }
+
     .custom-images .image-container div {
       flex: 1 1 300px;
     }
+
     .custom-images img {
       width: 100%;
       border-radius: 10px;
@@ -123,13 +129,19 @@
       box-shadow: 0 0 8px #c89b3cbb;
       transition: background-color 0.3s ease;
     }
+
     button#download-pdf-btn:hover {
       background-color: #e4b42c;
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
+      from {
+        opacity: 0;
+      }
+
+      to {
+        opacity: 1;
+      }
     }
 
     @keyframes fadeInUp {
@@ -137,6 +149,7 @@
         opacity: 0;
         transform: translateY(40px);
       }
+
       to {
         opacity: 1;
         transform: translateY(0);
@@ -144,17 +157,20 @@
     }
   </style>
 </head>
+
 <body>
   <div id="contenido">
     <header>
       <h1>🎉 ¡Felicidades, ana! 🎉</h1>
       <p>Que los vientos de Runaterra te acompañen siempre.</p>
-     
+
     </header>
 
     <div class="message">
-      En este día especial, los campeones se detienen un momento para honrarte. Has demostrado valentía, estrategia y corazón, cualidades dignas de un verdadero maestro del Rift.<br /><br />
-      Que cada nuevo desafío se convierta en una victoria. Hoy, la gloria no está en los rangos… ¡sino en celebrar que existes!
+      En este día especial, los campeones se detienen un momento para honrarte. Has demostrado valentía, estrategia y
+      corazón, cualidades dignas de un verdadero maestro del Rift.<br /><br />
+      Que cada nuevo desafío se convierta en una victoria. Hoy, la gloria no está en los rangos… ¡sino en celebrar que
+      existes!
     </div>
 
     <section class="champion">
@@ -172,63 +188,142 @@
     </section>
 
     <div class="message">
-      Recuerda: incluso los campeones más poderosos celebran los momentos importantes. <br />Hoy, eres tú quien brilla más fuerte que cualquier ultimate.<br /><br />
+      Recuerda: incluso los campeones más poderosos celebran los momentos importantes. <br />Hoy, eres tú quien brilla
+      más fuerte que cualquier ultimate.<br /><br />
       ¡Gracias por existir y por conquistar cada día con tu esencia única!
     </div>
 
     <section class="custom-images">
-        <h2>Y LO MEJOR</h2>
-        <div class="gallery-wrapper">
-          <button class="scroll-btn left" onclick="scrollGallery(-1)">⟨</button>
-          <div class="scroll-gallery" id="pugGallery">
-            <img src="img/chato_5.PNG" alt="Pug 1" />
-            <img src="img/chato_1.jfif" alt="Pug 5" />
-            <img src="img/chato_4.PNG" alt="Pug 2" />
-            <img src="img/chato_2.jfif" alt="Pug 4" />
-            <img src="img/chato_3.PNG" alt="Pug 3" />
-          </div>
-          <button class="scroll-btn right" onclick="scrollGallery(1)">⟩</button>
+      <h2>Y LO MEJOR</h2>
+      <div class="gallery-wrapper">
+        <button class="scroll-btn left" onclick="scrollGallery('pugGallery', -1)">⟨</button>
+        <div class="scroll-gallery" id="pugGallery">
+          <img src="img/chato_5.PNG" alt="Pug 1" />
+          <img src="img/chato_10.jfif" alt="Pug 3" />
+          <img src="img/chato_9.jfif" alt="Pug 3" />
+          <img src="img/chato_1.jfif" alt="Pug 5" />
+          <img src="img/chato_4.PNG" alt="Pug 2" />
+          <img src="img/chato_2.jfif" alt="Pug 4" />
+          <img src="img/chato_3.PNG" alt="Pug 3" />
+          <img src="img/chato_6.jfif" alt="Pug 3" />
+
+
         </div>
-      </section>
-      
-      <section class="message-from-chato">
-        <h2>🐾 Un mensaje especial de Chato 🐾</h2>
-        <div class="chato-message">
-          <p>
-            Hola Ana…  Sé que no hablo mucho (o bueno, nada en realidad), pero si pudiera ladrar palabras, hoy diría esto:
-          </p>
-          <p>
-            Gracias por ser mi compañera, por cada caricia, por cada paseo (¡aunque a veces no quería caminar!), y por esas siestas contigo que son mi paraíso. Eres mi mundo entero.
-          </p>
-          <p>
-            Hoy celebramos tu vida, pero yo la celebro todos los días desde que entraste en la mía. Nunca olvides que siempre estaré a tu lado, con mis ojitos brillando por ti… porque tú eres mi heroína sin capa, mi hogar.
-          </p>
-          <p>
-            ¡Feliz día! Te amo con toda mi alma de pug. 🐶💛
-          </p>
-          <p style="text-align: right; font-style: italic;">– Chato 🐾</p>
+        <button class="scroll-btn right" onclick="scrollGallery('pugGallery', 1)">⟩</button>
+      </div>
+    </section>
+
+
+
+    <section class="message-from-chato">
+      <h2>🐾 Un mensaje especial de Chato 🐾</h2>
+      <div class="chato-message">
+          <img src="img/chato_1.jfif" alt="Octavio el Pug" style="width: 100%; max-width: 400px; border-radius: 12px; border: 2px solid #c89b3c; box-shadow: 0 0 8px #000; margin: 0 auto 1.5rem; display: block;" />
+   
+        <p>
+          Hola Ana… Sé que no hablo mucho (o bueno, nada en realidad), pero si pudiera ladrar palabras, hoy diría esto:
+        </p>
+        <p>
+          Gracias por ser mi compañera, por cada caricia, por cada paseo (¡aunque a veces no quería caminar!), por nunca
+          rendirte y por
+          siempre estar a mi lado. Eres mi mundo entero.
+        </p>
+        <p>
+          Hoy celebramos tu vida, pero yo la celebro todos los días desde que entraste en la mía. Nunca olvides que
+          siempre estaré a tu lado, con mis ojitos brillando por ti… porque tú eres mi heroína sin capa, mi hogar.
+        </p>
+        <p>
+          ¡Feliz día! Te amo con toda mi alma de pug. 🐶💛
+        </p>
+        <p style="text-align: right; font-style: italic;">– Chato 🐾</p>
+      </div>
+    </section>
+
+
+    <section class="custom-images">
+
+      <div class="gallery-wrapper">
+        <button class="scroll-btn left" onclick="scrollGallery('octavioGallery', -1)">⟨</button>
+        <div class="scroll-gallery" id="octavioGallery">
+          <img src="img/octavio_5.jfif" alt="Pug 1" />
+
+          <img src="img/octavio_9.jfif" alt="Pug 1" />
+          <img src="img/octavio_8.jfif" alt="Pug 1" />
+          <img src="img/octavio_1.jfif" alt="Pug 1" />
+          <img src="img/octavio_2.jfif" alt="Pug 1" />
+          <img src="img/octavio_3.jpeg" alt="Pug 1" />
+          <img src="img/octavio_4.jfif" alt="Pug 1" />
+          <img src="img/octavio_7.jfif" alt="Pug 1" />
+          <img src="img/octavio_6.jfif" alt="Pug 1" />
+
+
+          <img src="img/octavio_10.jfif" alt="Pug 1" />
+          <img src="img/octavio_11.jfif" alt="Pug 1" />
+          <img src="img/octavio_12.jfif" alt="Pug 1" />
+          <img src="img/octavio_13.jfif" alt="Pug 1" />
+          <img src="img/octavio_14.jfif" alt="Pug 1" />
         </div>
-      </section>
-      
-      
+        <button class="scroll-btn right" onclick="scrollGallery('octavioGallery', 1)">⟩</button>
+      </div>
+    </section>
+<section class="message-from-chato">
+  <h2>🐾 Un mensaje especial de Octavio 🐾</h2>
+  <div class="chato-message">
+    <img src="img/octavio_13.jfif" alt="Octavio el Pug" style="width: 100%; max-width: 400px; border-radius: 12px; border: 2px solid #c89b3c; box-shadow: 0 0 8px #000; margin: 0 auto 1.5rem; display: block;" />
+    <p>
+      Hola… soy Octavio.<br>
+      Tal vez no lo recuerdes con la claridad con la que yo lo siento, pero cuando llegué a tu vida, tenía miedo en los ojos.  
+      No por hambre, no por frío, sino por las heridas que no se ven: aquellas que dejaron el maltrato, la desconfianza y el dolor.
+    </p>
+    <p>
+      Yo no sabía lo que era un hogar. Me escondía, dudaba, temblaba ante cualquier voz.  
+      Pero tú… tú llegaste con paciencia y con amor. Me hablaste bajito, me diste tiempo, y sobre todo, me diste algo que nunca había tenido: <strong>una oportunidad de volver a confiar.</strong>
+    </p>
+    <p>
+      Gracias por ver más allá de mi miedo.<br>
+      Gracias por no rendirte cuando yo aún no entendía qué era ser querido.  
+      Con tu cariño me mostraste que hay manos que acarician, palabras que abrazan y personas que sanan.
+    </p>
+    <p>
+      Hoy es tu cumpleaños… pero quien celebra de verdad soy yo.  
+      Porque desde que me rescataste, <strong>mi vida cambió para siempre.</strong>
+    </p>
+    <p>
+      Y sí, lo admito: soy bien travieso. Me encanta meterme donde no debo, correr cuando no debería, y muchas veces me lanzo al peligro como si fuera un juego.  
+      Pero también sé que siempre estarás ahí para protegerme, para reírte de mis locuras, y para amarme tal como soy: un pug inquieto con alma de explorador… y corazón de oro, gracias a ti.
+    </p>
+    <p>
+      <strong>Feliz cumpleaños Ana.</strong><br>
+      Gracias por salvarme, cuidarme, y darme la vida que nunca imaginé tener.
+    </p>
+    <p>
+      Nunca olvides que, aunque no hable, cada vez que te miro con estos ojitos llenos de brillo, mientras te toco con mi patita, te estoy diciendo lo mismo:
+    </p>
+    <p>
+      <strong>Te amo con cada travesura, con cada siesta y con cada ladrido.</strong><br>
+      Gracias por ser mi todo.
+    </p>
+    <p style="text-align: right; font-style: italic;">– Octavio 🐾💛</p>
+  </div>
+</section>
+
 
     <footer>
-     Hecho con mucho cariño, porque desde siempre te lo he dicho y lo vuelvo a repetir: te aprecio con el alma y te quiero muchísimo. Eres una persona increíble, y deseo que nunca cambies. Que la vida te regale siempre motivos para sonreír. Sé feliz, hoy y siempre. 🌿🔫 <br>— ¡Felicidades, Ana!
+      Hecho con mucho cariño Que la vida te regale siempre motivos
+      para sonreír. Sé feliz, hoy y siempre. 🌿🔫 <br>— ¡Felicidades, Ana!
     </footer>
   </div>
 
   <script>
-    function scrollGallery(direction) {
-      const gallery = document.getElementById("pugGallery");
+    function scrollGallery(galleryId, direction) {
+      const gallery = document.getElementById(galleryId);
       const images = gallery.querySelectorAll("img");
       const scrollAmount = images[0].offsetWidth + 20; // ancho + gap
       const totalScroll = gallery.scrollWidth - gallery.clientWidth;
-  
+
       if (direction === 1 && Math.ceil(gallery.scrollLeft) >= totalScroll) {
-        // Si llegó al final y va a la derecha → volver al inicio
         gallery.scrollTo({ left: 0, behavior: "smooth" });
       } else if (direction === -1 && gallery.scrollLeft <= 0) {
-        // Si está al inicio y va a la izquierda → ir al final
         gallery.scrollTo({ left: totalScroll, behavior: "smooth" });
       } else {
         gallery.scrollBy({
@@ -238,85 +333,87 @@
       }
     }
   </script>
-  
+
+
 </body>
+
 </html>
 <style>
   .custom-images {
-  margin: 3rem auto;
-  max-width: 850px;
-  text-align: center;
-}
+    margin: 3rem auto;
+    max-width: 850px;
+    text-align: center;
+  }
 
-.custom-images h2 {
-  color: #e4b42c;
-  margin-bottom: 1rem;
-}
+  .custom-images h2 {
+    color: #e4b42c;
+    margin-bottom: 1rem;
+  }
 
-.gallery-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  .gallery-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-.scroll-gallery {
-  display: flex;
-  overflow: hidden;
-  scroll-behavior: smooth;
-  gap: 20px;
-  width: 100%;
-  max-width: 750px;
-  padding: 10px 0;
-}
+  .scroll-gallery {
+    display: flex;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    gap: 20px;
+    width: 100%;
+    max-width: 750px;
+    padding: 10px 0;
+  }
 
-.scroll-gallery img {
-  flex: 0 0 auto;
-  width: 250px;
-  height: 250px;
-  object-fit: cover;
-  border-radius: 12px;
-  border: 2px solid #c89b3c;
-  box-shadow: 0 0 8px #000;
-}
+  .scroll-gallery img {
+    flex: 0 0 auto;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 2px solid #c89b3c;
+    box-shadow: 0 0 8px #000;
+  }
 
-.scroll-btn {
-  background-color: #1f1f1f;
-  color: #c89b3c;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  border-radius: 8px;
-  margin: 0 10px;
-  z-index: 1;
-  transition: background 0.3s;
-}
+  .scroll-btn {
+    background-color: #1f1f1f;
+    color: #c89b3c;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    margin: 0 10px;
+    z-index: 1;
+    transition: background 0.3s;
+  }
 
-.scroll-btn:hover {
-  background-color: #3a3a3a;
-}
-.message-from-chato {
-  max-width: 700px;
-  margin: 3rem auto;
-  padding: 1.5rem;
-  background: rgba(255, 255, 255, 0.05);
-  border: 2px solid #c89b3c;
-  border-radius: 12px;
-  box-shadow: 0 0 10px #c89b3c88;
-}
+  .scroll-btn:hover {
+    background-color: #3a3a3a;
+  }
 
-.message-from-chato h2 {
-  color: #f0e6d2;
-  margin-bottom: 1rem;
-  text-shadow: 1px 1px 4px #000;
-}
+  .message-from-chato {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.05);
+    border: 2px solid #c89b3c;
+    border-radius: 12px;
+    box-shadow: 0 0 10px #c89b3c88;
+  }
 
-.chato-message p {
-  font-size: 1.1rem;
-  line-height: 1.7;
-  color: #f0e6d2;
-  margin-bottom: 1rem;
-}
+  .message-from-chato h2 {
+    color: #f0e6d2;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 4px #000;
+  }
 
+  .chato-message p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #f0e6d2;
+    margin-bottom: 1rem;
+  }
 </style>
