@@ -14,7 +14,7 @@ body {
 
 .container {
     margin-top: 35%;
-    background: rgba(24, 43, 60, 0.3);
+    background: rgba(175, 43, 135, 0.45);
     padding: 20px;
     border-radius: 10px;
     display: inline-block;
@@ -22,16 +22,16 @@ body {
 
 h1 {
     font-size: 40px;
-    color: #757B98;
+    color: #ffffff;
 }
 
 p {
     font-size: 20px;
-    color: #958C89;
+    color: #ffffff;
 }
 
 button {
-    background-color: #202255;
+    background-color: #c440bd;
     color: white;
     padding: 10px 20px;
     font-size: 18px;
@@ -41,7 +41,7 @@ button {
 }
 
 button:hover {
-    background-color: #DC143C;
+    background-color: #531a58;
 }
 .custom-images {
     margin: 3rem auto;
